@@ -193,6 +193,11 @@ img {
   border-radius: 5px;
 }
 
+.header-btn:hover {
+  background-color: #F5443B;
+  opacity: 0.5;
+}
+
 .after::after {
   content: "";
   display: block;
