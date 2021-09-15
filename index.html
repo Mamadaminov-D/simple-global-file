@@ -26,26 +26,41 @@
             <li class="header-item"> <img src="img/Group 16.svg" alt="headr-logo"> </li>
           </ul>
           <ul class="header-menu row center">
-            <li class="header-item">Home</li>
-            <li class="header-item">Courses</li>
-            <li class="header-item">Webinar</li>
-            <li class="header-item header-item-last">Pricing</li>
+            <li class="header-item"><a href="#" class="header-href he">Home</a></li>
+            <li class="header-item"><a href="#" class="header-href">Courses</a></li>
+            <li class="header-item"><a href="#" class="header-href">Webinar</a></li>
+            <li class="header-item header-item-last"><a href="#" class="header-href">Pricing</a></li>
           </ul>
-          <ul class="header-lang row">
+          <!-- <ul class="header-lang row">
             <li class="header-item after">Eng</li>
-            <li class="header-item"><a class="header-btn" href="">Login</a></li>
-          </ul>
+            <li class="header-item"></li>
+          </ul> -->
+
+          <div class="header-btns">
+              <form action="">
+              <select name="langugage" id="lang" class="after">
+                <option value="Eng">Eng</option>
+                <option value="Uz">Uz</option>
+                <option value="Ru">Ru</option>
+              </select>
+            </form>
+            <a class="header-btn" href="">Login</a>
+          </div>
+          
         </nav>
       </div>
     </header>
   </section>
 
   <section id="hero-section">
+    <div class="container">
+
     <div class="advicer">
       <img class="opa" src="img/opa.svg" alt="sister" width="500px" height="500px">
     </div>
     <div class="lamp"><img class="svet" src="img/lamp.svg" alt="lamp"></div>
     <div class="declaration"><img class="dc" src="img/main-small2.svg" alt="lamp"></div>
+    <div class="relativ">
     <div class="users">
       <a href="">
         <img class="persons human1" src="img/natawa.jpg" alt="" >
@@ -59,15 +74,18 @@
           Students <span class="grd">joined!</span></p> -->
       </a>
     </div>
-    <div class="container">
+  </div>
+
       <div class="huge ">
         <div class="career ">
           <h2 class="career-title">Grow Your Skills To Advance Your Career Path.</h2>
           <p class="career-txt">We have something big for you who want to level up!</p>
-          <div class="search">
-            <input class="input" type="text" placeholder="What do you want to learn...">
-            <img class="search-bx" src="img/search.svg" alt="search">
-          </div>
+          
+            <form action="" class="search">
+              <input class="input" type="text" placeholder="What do you want to learn...">
+              <button></button>
+            </form>
+          
           <p class="career-span ">Suggestions</p>
 
           <nav class="btn-many row">

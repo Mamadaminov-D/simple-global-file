@@ -87,7 +87,13 @@ img {
   }
 }
 
+
+
 .solution {
+  position: relative;
+}
+
+.relativ {
   position: relative;
 }
 
@@ -95,8 +101,8 @@ img {
   width: 363px;
   height: 92px;
   position: absolute;
-  top: 102%;
-  left: 250px;
+  top: 480px;
+  left: 200px;
   background: linear-gradient(180deg, rgba(76, 94, 157, 0.8) -32.08%,
       rgba(23, 24, 54, 0.8) 127.36%);
   border-radius: 20px;
@@ -149,7 +155,7 @@ img {
 
 .opa {
   position: absolute;
-  width: 800px;
+  width: 700px;
   top: 0;
   left: -8%;
 }
@@ -160,14 +166,29 @@ img {
   justify-content: end;
 }
 
-.header-item {
+.header-menu {
+  padding: 0;
+}
+.header-href {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
-  margin-right: 50px;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+
 }
+
+.header-href:hover {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.header-href.he{
+  opacity: 1;
+}
+
 
 .header-item-last {
   margin-right: 300px;
@@ -187,6 +208,11 @@ img {
   margin-right: 50px;
 }
 
+.header-btns{
+  display: flex;
+  align-items: center;
+}
+
 .header-btn {
   padding: 5px 12px;
   background-color: #F5443B;
@@ -198,15 +224,20 @@ img {
   opacity: 0.5;
 }
 
-.after::after {
-  content: "";
-  display: block;
+select.after {
   background-image: url('../img/globus.svg');
-  width: 25px;
+  width: 75px;
   height: 25px;
   margin-left: 5px;
-  background-size: cover;
+  margin-right: 10px;
+  background-position: right top;
   background-repeat: no-repeat;
+}
+
+select {
+  background-color: #171836;
+  color: white;
+  border: none;
 }
 
 .career {
@@ -240,19 +271,33 @@ img {
   color: rgba(255, 255, 255, 0.4);
 }
 
-.input {
-  width: 375px;
-  height: 42px;
+form button{
+  background-image: url('../img/search.svg');
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  margin-left: 190px;
+  margin-top: 11px;
+  background-color: #9A9CCB;
+  color: white;
+}
+
+.search{
+  width: 506px;
+  height: 68px;
   left: 814px;
   top: 538px;
   background: #1F2143;
   border-radius: 12px;
-  padding: 5px 0px 5px 20px;
 }
 
-.search {
-  position: relative;
+.input {
+  padding: 5px 0px 5px 20px;
+  border: none;
+  background-color:transparent ;
 }
+
+
 
 .search-bx {
   position: absolute;
