@@ -215,7 +215,7 @@ img {
 }
 
 .header-btn {
-  padding: 12px 15px;
+  padding: 8px 12px;
   background-color: #F5443B;
   border: #F5443B 1px solid;
   border-radius: 5px;
@@ -316,28 +316,30 @@ select {
   top: 22%;
   right: 38%;
 }
-
-.btn-many ul {
-  margin: 5px 5px;
-  padding: 0;
+.main-title-span {
+  display: block;
+  font-weight: 200;
+  font-size: 15px;
+  margin-bottom: 35px;
+  opacity: 0.5;
 }
 
-.second {
-  margin: 50px 50px;
-}
-
-.career-item a {
-  border: 1px #66678F solid;
-  display: inline-block;
-  margin: 5px;
-  padding: 3px 8px;
-  background-color: transparent;
-  border-radius: 5px;
+.main-sg-link {
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 36px;
+  padding: 5px 20px;
+  margin: 0 5px;
+  margin-bottom: 20px;
+  opacity: 0.4;
+  border: 2px solid rgba(154, 156, 203, 0.6);
+  border-radius: 9px;
+  
 }
 
 .just {
   margin-top: 75px;
-  height: 250px;
+  height: 200px;
 }
 
 .friends {
@@ -483,6 +485,7 @@ select {
   padding: 10px 10px;
   background-color: #131429;
   border-radius: 15px;
+  transition: height 0.6s ease;
 }
 
 .technolgy:hover {
@@ -666,6 +669,7 @@ transition: all 0.5s ease;
   font-size: 18px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.8);
+  margin-top: 0;
 }
 
 .null {
@@ -696,6 +700,20 @@ sub {
 
 .starr::before {
   background-image: url('../img/star.svg');
+}
+
+.star:nth-child(2) .starr::before {
+  background-image: url('../img/key.svg');
+}
+
+.star:nth-child(3) .starr::before {
+  background-image: url('../img/karona.svg');
+}
+
+.burche {
+  position: absolute;
+  top: 0px;
+  left: 272px;
 }
 
 .star {
@@ -805,7 +823,7 @@ sub {
 }
 
 .birja {
-  margin: 50px 30px 30px 200px;
+  margin: 50px 30px 0 200px;
 }
 
 /*  */
@@ -820,6 +838,7 @@ sub {
 
 .foter-socials {
   margin-top: 23px;
+  padding-left: 0;
 }
 
 .social-items+.social-items {
@@ -854,7 +873,7 @@ sub {
   opacity: 0.6;
 }
 
-.foter-list:hover a {
+.foter-list a:hover  {
   opacity: 0.9;
 }
 
